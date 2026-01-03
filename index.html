@@ -9,9 +9,23 @@
 </head>
 <body>
 
+  <!-- COFFEE ANIMATIONS -->
+  <div class="coffee-animations">
+    <div class="floating-beans"></div>
+    <div class="coffee-steam"></div>
+    <div class="coffee-cup-animated">
+      <div class="coffee-liquid"></div>
+      <div class="steam steam1"></div>
+      <div class="steam steam2"></div>
+      <div class="steam steam3"></div>
+    </div>
+  </div>
+
   <!-- NAV -->
   <nav class="nav">
-    <div class="logo">🐺 Sleepy Wolf</div>
+    <div class="logo" aria-label="Sleepy Wolf Coffee Co.">
+      <img src="logo.png" alt="Sleepy Wolf Coffee Co. logo" />
+    </div>
     <div class="nav-links">
       <a href="#">Shop</a>
       <a href="#">About</a>
@@ -24,6 +38,7 @@
   <section class="hero">
     <h1>Wake up.<br><span>Stay Wild.</span></h1>
     <p>Coffee for sleepy souls who still got dreams.</p>
+    <div class="quality-badge">✨ 100% Arabica Coffee Powder ✨</div>
     <button class="big-cta">Shop Now ☕</button>
   </section>
 
@@ -43,11 +58,20 @@
     </div>
   </section>
 
+  <!-- QUALITY -->
+  <section class="quality">
+    <div class="quality-content">
+      <h2>🌍 100% Premium Arabica Coffee</h2>
+      <p>We source only the finest 100% Arabica coffee beans, ground to perfection. No blends, no shortcuts—just pure, smooth, premium coffee powder that wakes you up right.</p>
+      <button class="quality-cta">Shop Premium Coffee ☕</button>
+    </div>
+  </section>
+
   <!-- BRAND VIBE -->
   <section class="vibe">
     <h2>Why Sleepy Wolf?</h2>
     <ul>
-      <li>☕ No boring coffee talk</li>
+      <li>☕ 100% Arabica coffee powder</li>
       <li>🌈 Aesthetic packaging</li>
       <li>🧠 Made for late nights & early dreams</li>
     </ul>
@@ -57,11 +81,32 @@
   <footer>
     <p>© 2026 Sleepy Wolf Coffee Co.</p>
     <div class="socials">
-      <span>📸</span>
-      <span>🎵</span>
-      <span>🐦</span>
+      <a href="#" aria-label="Instagram" title="Instagram"><span>📸</span></a>
+      <a href="#" aria-label="TikTok" title="TikTok"><span>🎵</span></a>
+      <a href="#" aria-label="Twitter" title="Twitter"><span>🐦</span></a>
     </div>
   </footer>
+
+  <!-- CTA POPUP MODAL -->
+  <div class="cta-modal-overlay" id="ctaModal">
+    <div class="cta-modal">
+      <button class="cta-modal-close" id="closeModal">&times;</button>
+      <div class="cta-modal-content">
+        <div class="cta-modal-icon">☕</div>
+        <h2 class="cta-modal-title" id="modalTitle">Get Your Premium Coffee!</h2>
+        <p class="cta-modal-message" id="modalMessage">☕ Get your premium Arabica coffee now! 🐺</p>
+        <div class="cta-modal-features">
+          <div class="feature-item">✨ 100% Arabica Coffee</div>
+          <div class="feature-item">🌍 Premium Quality</div>
+          <div class="feature-item">🚀 Fast Shipping</div>
+        </div>
+        <div class="cta-modal-buttons">
+          <button class="cta-modal-primary" id="modalPrimaryBtn">Shop Now</button>
+          <button class="cta-modal-secondary" id="modalSecondaryBtn">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
